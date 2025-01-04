@@ -1,0 +1,175 @@
+/*Dashboard Design: */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Window size: */
+.designerW{
+    width: 100vw; /* full window width */
+    height:100vh; /* full window height */
+    background-color: black;
+}
+
+/* Top Dashboard: */
+.topScreen{
+    width:100vw;
+    height:20vh;
+    background:linear-gradient(135deg,  #8e44ad,#1e90ff, #00ced1);
+}
+
+/* Font: */
+.topScreenF1{
+    margin-top: 0vh;
+    padding-left: 3vw;
+    padding-top: 3vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color:white;
+    display: inline-block;
+}
+
+/* Font: */
+.topScreenF2{
+    margin-top: 0vh;
+    padding-left: 2vh;
+    padding-top: 1vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-style: italic;
+    color:white;
+    display: block;
+    text-align: center;
+}
+
+/* icon: */
+.topScreenAvatar{
+    margin-left: 1vw;
+    width: 5vw;
+    height: 8vh;
+    vertical-align:middle;
+    background-color: white;
+    border-radius: 60%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Search Bar: */
+.topScreenSB{
+    display: inline-block;
+}
+
+/* Search Bar form properties: */
+.topScreenSBP{
+    margin-left: 5vw;
+    width: 20vw;
+    height: 4vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20%;
+    color:black;
+    vertical-align: middle;
+}
+
+/* icon: */
+.topScreenSearch{
+    width: 2vw;
+    height: 4vh;
+    vertical-align:middle;
+    background-color: white;
+    border-radius: 10%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* icon: */
+.topScreenAlerts{
+    margin-left: 15vw;
+    width: 3vw;
+    height: 5vh;
+    vertical-align:middle;
+    border-radius: 60%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* icon: */
+.topScreenAnnouncement{
+    margin-left: 1vw;
+    width: 3vw;
+    height: 5vh;
+    vertical-align:middle;
+    border-radius: 40%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* icon: */
+.topScreenSettings{
+    margin-left: 1vw;
+    width: 3vw;
+    height: 5vh;
+    vertical-align:middle;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    background: #00ced1;
+}
+
+/* icon: */
+.topScreenLogout{
+    margin-left: 1vw;
+    width: 3vw;
+    height: 5vh;
+    vertical-align:middle;
+    border-radius: 100%;
+    display: inline-block;
+    cursor: pointer;
+    background: #00ced1;
+}
+
+/*_________________completed_________________*/
+
+
+/* Main Dashboard: */
+.bodyScreen{
+    width:100vw;
+    height:calc(100vh - 20vh);
+    background-color: antiquewhite;
+}
+
+/* Navigation side bar Left: */
+.sideScreenL{
+    width: 15vw;
+    height: calc(100vh - 20vh);
+    background-color: grey;
+}
+
+/* Navigation side bar Right: */
+.sideScreenR{
+    margin-left: 97vw;
+    width: calc(100vw - 97vw);
+    height: calc(100vh - 45vh);
+    background-color: grey;
+}
+
+/* AutoScreen top bar: */
+.autoScreenB{
+    margin-left:15vw;
+    width:calc(100vw - 15vw);
+    height: calc(100vh - 90vh);
+    background-color: white;
+}
+
+/* Contact Bar: */
+.contactBar{
+    margin-left:15vw;
+    margin-top: 13vh;
+    width:calc(100vw - 15vw);
+    height: calc(100vh - 98vh);
+    background-color: white;
+}
