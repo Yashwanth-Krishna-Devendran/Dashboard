@@ -1,145 +1,33 @@
-/*Dashboard Design: */
-body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Times New Roman', Times, serif;
-}
-
 /* Window size: */
 .designerW{
+    margin:0px;
+    padding: 0px;
     width: 100vw; /* full window width */
     height:100vh; /* full window height */
     background-color: black;
+    position:static;
 }
+/*----------1----------*/
+
 
 /* Top Dashboard: */
 .topScreen{
     width:100vw;
     height:20vh;
     background:linear-gradient(135deg,  #8e44ad,#1e90ff, #00ced1);
+    position: relative;
+    left:0vw;
+    top:0vh;
 }
-
-/* Font: */
-.topScreenF1{
-    margin-top: 0vh;
-    padding-left: 3vw;
-    padding-top: 3vh;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    font-weight: bolder;
-    color:white;
-    display: inline-block;
-}
-
-/* Font: */
-.topScreenF2{
-    margin-top: 0vh;
-    padding-left: 2vh;
-    padding-top: 1vh;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-style: italic;
-    color:white;
-    display: block;
-    text-align: center;
-}
-
-/* icon: */
-.topScreenAvatar{
-    margin-left: 1vw;
-    width: 5vw;
-    height: 8vh;
-    vertical-align:middle;
-    background-color: white;
-    border-radius: 60%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-/* Search Bar: */
-.topScreenSB{
-    display: inline-block;
-}
-
-/* Search Bar form properties: */
-.topScreenSBP{
-    margin-left: 5vw;
-    width: 20vw;
-    height: 4vh;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: larger;
-    display: inline-block;
-    text-align: center;
-    border-radius: 20%;
-    color:black;
-    vertical-align: middle;
-}
-
-/* icon: */
-.topScreenSearch{
-    width: 2vw;
-    height: 4vh;
-    vertical-align:middle;
-    background-color: white;
-    border-radius: 10%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-/* icon: */
-.topScreenAlerts{
-    margin-left: 15vw;
-    width: 3vw;
-    height: 5vh;
-    vertical-align:middle;
-    border-radius: 60%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-/* icon: */
-.topScreenAnnouncement{
-    margin-left: 1vw;
-    width: 3vw;
-    height: 5vh;
-    vertical-align:middle;
-    border-radius: 40%;
-    display: inline-block;
-    cursor: pointer;
-}
-
-/* icon: */
-.topScreenSettings{
-    margin-left: 1vw;
-    width: 3vw;
-    height: 5vh;
-    vertical-align:middle;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    background: #00ced1;
-}
-
-/* icon: */
-.topScreenLogout{
-    margin-left: 1vw;
-    width: 3vw;
-    height: 5vh;
-    vertical-align:middle;
-    border-radius: 100%;
-    display: inline-block;
-    cursor: pointer;
-    background: #00ced1;
-}
-
-/*_________________completed_________________*/
-
 
 /* Main Dashboard: */
 .bodyScreen{
     width:100vw;
-    height:calc(100vh - 20vh);
-    background-color: antiquewhite;
+    height:calc(100vh - 23vh);
+    background-color: #f2f2f2;
+    position: relative;
+    left:0vw;
+    top:0vh;
 }
 
 /* Navigation side bar Left: */
@@ -147,29 +35,488 @@ body{
     width: 15vw;
     height: calc(100vh - 20vh);
     background-color: grey;
+    position: absolute;
+    left:0vw;
+    top:0vh;
 }
 
 /* Navigation side bar Right: */
 .sideScreenR{
-    margin-left: 97vw;
     width: calc(100vw - 97vw);
-    height: calc(100vh - 45vh);
+    height: calc(100vh - 69.8vh);
     background-color: grey;
-}
-
-/* AutoScreen top bar: */
-.autoScreenB{
-    margin-left:15vw;
-    width:calc(100vw - 15vw);
-    height: calc(100vh - 90vh);
-    background-color: white;
+    position:absolute;
+    right:0vw;
+    top:10.3vh;
 }
 
 /* Contact Bar: */
 .contactBar{
-    margin-left:15vw;
-    margin-top: 13vh;
     width:calc(100vw - 15vw);
-    height: calc(100vh - 98vh);
+    height: calc(100vh - 97vh);
     background-color: white;
+    position: absolute;
+    bottom:0vh;
+    right:0vw;
+    border-top-color: black;
+    border-top-width: 0.3vh;
+    border-top-style: solid;
 }
+
+/* AutoScreen top bar: */
+.autoScreenB{
+    width:calc(100vw - 15vw);
+    height: calc(100vh - 90vh);
+    background-color: white;
+    border-bottom-color: black;
+    border-bottom-width: 0.3vh;
+    border-bottom-style: solid;
+    position: absolute;
+    top:0vh;
+    right:0vw;
+}
+/*----------2----------*/
+
+/* Font: */
+.topScreenF1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bolder;
+    color:wheat;
+    position: absolute;
+    top:1.5vh;
+    left:3vw;
+    -webkit-text-stroke: 0.04vh white;
+}
+
+/* icon: */
+.topScreenAvatar{
+    width: 5vw;
+    height: 8vh;
+    vertical-align:middle;
+    background-color: white;
+    border-radius: 60%;
+    cursor: pointer;
+    position: absolute;
+    left: 34vw;
+    top:3vh;
+}
+
+/* Search Bar form properties: */
+.topScreenSBP{
+    width: 20vw;
+    height: 4vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    font-style: italic;
+    text-align: center;
+    border-radius: 20%;
+    border-color: #8e44ad;
+    border-width: 0.5vw;
+    color:darkgreen;
+    position: absolute;
+    left: 47.5vw;
+    top: 4vh;
+}
+
+/* icon: */
+.topScreenSearch{
+    width: 2.8vw;
+    height: 4.5vh;
+    vertical-align:middle;
+    border-radius: 10%;
+    cursor: pointer;
+    position: absolute;
+    left:65.3vw;
+    top:4.8vh;
+}
+
+/* icon: */
+.topScreenAlerts{
+    width: 3vw;
+    height: 5vh;
+    vertical-align:middle;
+    border-radius: 60%;
+    position: absolute;
+    cursor: pointer;
+    left:80vw;
+    top:5vh;
+}
+
+/* icon: */
+.topScreenAnnouncement{
+    width: 3vw;
+    height: 5vh;
+    vertical-align:middle;
+    border-radius: 40%;
+    position: absolute;
+    cursor: pointer;
+    left:84vw;
+    top:5vh;
+}
+
+/* icon: */
+.topScreenSettings{
+    width: 3vw;
+    height: 5vh;
+    vertical-align:middle;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+    background: #00ced1;
+    left:88vw;
+    top:5vh;
+}
+
+/* icon: */
+.topScreenLogout{
+    width: 3vw;
+    height: 5vh;
+    vertical-align:middle;
+    border-radius: 100%;
+    position: absolute;
+    cursor: pointer;
+    background: #00ced1;
+    left:92vw;
+    top:5vh;
+}
+
+/* Font: */
+.topScreenF2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: medium;
+    font-style:oblique;
+    color:wheat;
+    position: absolute;
+    text-align: center;
+    top:12vh;
+    left:3vw;
+}
+/*----------3----------*/
+
+.sideLFirst{
+    width:14.95vw;
+    height:10vh;
+    background-color: white;
+    position: absolute;
+    left:0vw;
+    top:0vh;
+}
+
+.sideLNext1,.sideLNext2,.sideLNext3, .sideLNext4,
+.sideLNext5, .sideLNext6, .sideLNext7, .sideLNext8{
+    width:14.5vw;
+    height:7.5vh;
+    background-color: white;
+    position: absolute;
+    left:0vw;
+}
+
+.sideLNext1{
+    top:11.5vh;
+}
+.sideLNext2{
+    top:19.5vh;
+}
+.sideLNext3{
+    top:27.5vh;
+}
+.sideLNext4{
+    top:35.5vh;
+}
+.sideLNext5{
+    top:43.5vh;
+}
+.sideLNext6{
+    top:51.5vh;
+}
+.sideLNext7{
+    top:59.5vh;
+}
+.sideLNext8{
+    top: 67.5vh;
+}
+
+.sideLF{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-small;
+    font-style: italic;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 77vh;
+    left:2vw;
+}
+
+.autoScreenBD{
+    width:32vw;
+    height:9vh;
+    background-color:#8e44ad;
+    position: absolute;
+    left:0.3vw;
+    top:0.5vh;
+}
+
+.autoScreenF1{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+    -webkit-text-stroke: 0.02vh #00ced1;
+    position: absolute;
+    top:-1vh;
+    left: 10vw;
+}
+
+/* icon: */
+.sideLNavigation{
+    width: 3vw;
+    height: 5vh;
+    vertical-align:middle;
+    border-radius: 40%;
+    position: absolute;
+    cursor: pointer;
+}
+
+.sideLNavigationF1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: large;
+    position: absolute;
+    left:4vw;
+}
+
+.sideLNavigationF2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-size: large;
+    position: absolute;
+    top: -3vh;
+    left: 2vw; /*change*/
+}
+
+.aiButton{
+    width: 12vw;
+    height:6vh;
+    border-width: 1vh;
+    border-radius:4vh;
+    border-color:  rgb(3, 76, 105);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color: rgb(3, 76, 105);
+    font-size: large;
+    cursor:pointer;
+    position: absolute;
+    left: 64vw;
+    top:1.8vh;
+}
+
+.aiButton::after{
+    width: 12vw;
+    height:6vh;
+    border-width: 1vh;
+    border-radius:4vh;
+    border-color:  rgb(3, 76, 105);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    background-color:  rgb(3, 76, 105);
+    font-size: large;
+    cursor:pointer;
+    position: absolute;
+    left: 64vw;
+    top:1.8vh;
+}
+
+.navigationFont1,.navigationFont2, .navigationFont3 , .navigationFont4{
+    font-family:'Times New Roman', Times, serif ;
+    font-size: large;
+    font-weight: bold;
+    color:rgb(3, 76, 105);
+    position: absolute;
+}
+
+.navigationFont1{
+    left:36vw;
+    top:3.5vh;
+}
+.navigationFont2{
+    left:42vw;
+    top:3.5vh;
+}
+
+.navigationFont3{
+    left:48vw;
+    top:3.5vh;
+}
+
+.navigationFont4{
+    left:56vw;
+    top:3.5vh;
+}
+
+.navigationFont::after, .navigationFont2::after, .navigationFont3::after, .navigationFont4::after{
+    font-family:'Times New Roman', Times, serif ;
+    font-size: large;
+    font-weight: bold;
+    color:rgb(3, 76, 105);
+    position: absolute;
+}
+
+.navigationFont1::after{
+    left:36vw;
+    top:3.5vh;
+}
+
+.navigationFont2::after{
+    left: 48vw;
+    top:3.5vh;
+}
+
+.navigationFont3::after{
+    left: 44vw;
+    top:3.5vh;
+}
+
+.navigationFont4::after{
+    left: 52vw;
+    top:3.5vh;
+}
+
+.dotbutton{
+    width: 1vw;
+    height: 4vh;
+    border-radius: 2vw;
+    background-color: rgb(3, 76, 105);
+    position: absolute;
+    left:83vw;
+    top: 3vh;
+}
+
+.contactDiv1{
+    width: 17vw;
+    height: 2.9vh;
+    background-color: #f1d7fc;
+    border-right: black;
+    border-right-style:solid;
+    border-right-width: 0.2vw;
+}
+.contactDiv2{
+    width: 17vw;
+    height: 2.9vh;
+    background-color: white;
+    border-right: black;
+    border-right-style:solid;
+    border-right-width: 0.2vw;
+    position: absolute;
+    left:17.2vw;
+    top:0vh;
+}
+.contactDiv3{
+    width: 17vw;
+    height: 2.9vh;
+    background-color: #f1d7fc;
+    border-right: black;
+    border-right-style:solid;
+    border-right-width: 0.2vw;
+    position: absolute;
+    left:34.4vw;
+    top:0vh;
+}
+.contactDiv4{
+    width: 17vw;
+    height: 2.9vh;
+    background-color: white;
+    border-right: black;
+    border-right-style:solid;
+    border-right-width: 0.2vw;
+    position: absolute;
+    left:51.6vw;
+    top:0vh;
+}
+.contactDiv5{
+    width: 16.2vw;
+    height: 2.9vh;
+    background-color: #f1d7fc;
+    position: absolute;
+    left:68.8vw;
+    top:0vh;
+}
+
+.contactA{
+    color:black;
+}
+
+.sideRDiv1{
+    width:2.8vw;
+    height: 5.8vh;
+    background-color: white;
+    position: absolute;
+    top:0.1vh;
+    left: 0.2vw;
+}
+.sideRDiv2{
+    width:2.8vw;
+    height: 5.8vh;
+    background-color: white;
+    position: absolute;
+    top:6vh;
+    left: 0.2vw;
+}
+.sideRDiv3{
+    width:2.8vw;
+    height: 5.8vh;
+    background-color: white;
+    position: absolute;
+    top:12vh;
+    left: 0.2vw;
+}
+.sideRDiv4{
+    width:2.8vw;
+    height: 5.8vh;
+    background-color: white;
+    position: absolute;
+    top:18vh;
+    left: 0.2vw;
+}
+.sideRDiv5{
+    width:2.8vw;
+    height: 5.8vh;
+    background-color: white;
+    position: absolute;
+    top:24vh;
+    left: 0.2vw;
+}
+
+.sideRRecents{
+    width: 2vw;
+    height: 4vh;
+    position: absolute;
+    cursor: pointer;
+    left:0.5vw;
+    top:1vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
